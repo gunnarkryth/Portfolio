@@ -1,0 +1,19 @@
+.nav_main {
+  background-color: grey;
+  padding: 1rem;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    li {
+      a {
+        color: #eee;
+        text-decoration: none;
+        &:hover {
+          color: #fff;
+text-shadow: 0 0 1px #fff;
+        }
+      }
+    }
+  }
+}

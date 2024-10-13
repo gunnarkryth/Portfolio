@@ -1,8 +1,10 @@
 import { NavLink as Link } from "react-router-dom";
 
+import s from "./Style.module.scss"
+
 export const Nav = () => {
   return (
-    <nav>
+    <nav className={s.nav_main}>
       <ul>
         <li>
           <Link to="/">Home</Link>
