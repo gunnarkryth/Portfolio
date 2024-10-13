@@ -1,23 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+  p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+}
+
 .WebsiteGallery {
-  margin: 1rem;
   h2 {
+    padding: 3rem;
     text-align: center;
-    padding: 1rem;
   }
   .card_grid {
+    padding: 1rem 10%;
+    background-color: grey;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 3rem;
     figure {
+      background-color: white;
       position: relative;
-      box-shadow: 0 0 1rem black;
+      box-shadow: 0 1rem 1rem #00000050;
       border-radius: 1rem;
       .link_wrapper {
         position: absolute;
-        left: 0;
-        right: 0;
         top: 0;
+        right: 0;
         bottom: 0;
+        left: 0;
         cursor: pointer;
       }
       .img_container {
@@ -31,6 +47,7 @@
         padding: 1rem;
         min-height: 140px;
         h3 {
+          margin-bottom: 1rem;
           text-align: center;
         }
         p {
