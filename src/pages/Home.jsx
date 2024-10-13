@@ -1,8 +1,9 @@
+import { WebsiteGallery } from "../components/WebsiteGallery/WebsiteGallery";
+
 export const Home = () => {
   return (
     <>
-      <h2>Home</h2>
-      AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      <WebsiteGallery></WebsiteGallery>
     </>
   );
 };
