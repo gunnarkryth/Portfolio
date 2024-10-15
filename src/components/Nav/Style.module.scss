@@ -1,5 +1,7 @@
+@import "src/assets/styles/Variables.module.scss";
+
 .nav_main {
-  background-color: grey;
+  background-color: $madder;
   padding: 1rem;
   ul {
     display: flex;
@@ -7,11 +9,11 @@
     list-style: none;
     li {
       a {
-        color: #eee;
+        color: $main;
         text-decoration: none;
         &:hover {
-          color: #fff;
-text-shadow: 0 0 1px #fff;
+          color: $text;
+          text-shadow: 0 0 1px $text;
         }
       }
     }

@@ -1,6 +1,8 @@
+@import "src/assets/styles/Variables.module.scss";
+
 .header_main {
-    padding: 1rem 0 0;
-  background-color: grey;
+  padding: 1rem 0 0;
+  background-color: $accent;
   color: white;
   text-align: center;
 }
