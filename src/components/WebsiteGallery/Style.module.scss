@@ -1,60 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
-
 @import "src/assets/styles/Variables.module.scss";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Comfortaa", sans-serif;
-  p {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-  }
-}
-
-.WebsiteGallery {
-  h2 {
-    padding: 3rem;
-    text-align: center;
-  }
-  .card_grid {
-    padding: 1rem 10%;
-    background-color: grey;
+.card_grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+//   width: 100%;
+  figure {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    figure {
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    width: 70vw;
+    height: 70vh;
+    .link_wrapper {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .img_container {
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+    }
+    article {
       background-color: white;
-      position: relative;
-      box-shadow: 0 1rem 1rem #00000050;
-      border-radius: 1rem;
-      .link_wrapper {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        cursor: pointer;
-      }
-      .img_container {
-        border-radius: 1rem 1rem 0 0;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 300px;
-      }
-      figcaption {
-        padding: 1rem;
-        min-height: 140px;
-        h3 {
-          margin-bottom: 1rem;
-          text-align: center;
-        }
-        p {
-        }
-      }
+      height: 100%;
     }
   }
 }

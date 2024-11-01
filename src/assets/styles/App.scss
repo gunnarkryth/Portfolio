@@ -1,4 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inika:wght@400;700&family=Licorice&display=swap");
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+  }
+}
+main {
+  padding: 10vh;
 }
